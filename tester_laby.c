@@ -4,21 +4,25 @@
 
 #include "laby.c"
 
-int main(void){
+int main(int argc, char * argv[]){
 
-
-
-  FILE *fp;
-  // Il faut changer le nom du fichier pour tester sur une autre map
-  fp = fopen("map/map15.txt","r"); // read mode
-  if( fp == NULL ){
-    fprintf(stderr,"Problem opening file");
+   FILE *fp;
+  if (argc == 2) {
+    fp = fopen(argv[1],"r"); // read mode
+    if( fp == NULL ){
+      fprintf(stderr,"Problem opening file\n");
+      exit(EXIT_FAILURE);
+    }
+  }
+  else {
+    fprintf(stderr,"Invalid number of argument\n");
     exit(EXIT_FAILURE);
   }
+    
 
   labyMap* map=getLabyMapFromFile(fp);
   if( map == NULL ){
-    fprintf(stderr,"Invalid file");
+    fprintf(stderr,"Invalid file\n");
     exit(EXIT_FAILURE);
   }
 
