@@ -62,7 +62,6 @@ int main(int argc, char * argv[]){
   printf("## Map résolue :\n");
   drawLabyMap(map);
 
-  free(solution);
   free(map->numcontent);
   free(map->opcontent);
   free(map);
