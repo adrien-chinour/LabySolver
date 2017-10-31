@@ -190,9 +190,6 @@ enum operation getOperation(labyMap *m, enum direction d){
   }
   c = m->opcontent[indice];
 
-  /*
-  * Il faut utiliser les constantes définies et non pas leurs valeurs
-  */
   switch(c){
     case '+': return PLUS; break;
     case '-': return MINUS; break;

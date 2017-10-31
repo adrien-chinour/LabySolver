@@ -15,10 +15,10 @@ int main(int argc, char * argv[]){
     }
   }
   else {
-    fprintf(stderr,"Invalid number of argument\n");
+    fprintf(stderr,"Invalid number of argument:\n./tester_laby FILE_MAP_PATH\n");
     exit(EXIT_FAILURE);
   }
-    
+
 
   labyMap* map=getLabyMapFromFile(fp);
   if( map == NULL ){
@@ -62,7 +62,7 @@ int main(int argc, char * argv[]){
   printf("## Map résolue :\n");
   drawLabyMap(map);
 
-
+  free(solution);
   free(map->numcontent);
   free(map->opcontent);
   free(map);
