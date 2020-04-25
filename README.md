@@ -6,7 +6,7 @@ Projet à réalisé sur une semaine pour l'UE programmation C du semestre 1 de l
 ## Installation
 
 ```
-git clone https://github.com/adrien-chinour/LabySolver
+git clone https://github.com/adrien-chinour/Laby-solver
 cd LabySolver
 make
 ```
