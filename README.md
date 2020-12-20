@@ -1,13 +1,13 @@
 # LabySolver
 Resolveur du jeu http://laby.thr.pm/
 
-Projet à réalisé sur une semaine pour l'UE programmation C du semestre 1 de licence 2 informatique.
+Projet réalisé sur une semaine pour l'UE programmation C du semestre 1 de licence 2 informatique.
 
 ## Installation
 
 ```
-git clone https://github.com/adrien-chinour/Laby-solver
-cd LabySolver
+git clone https://github.com/adrien-chinour/laby-solver
+cd laby-solver
 make
 ```
 
